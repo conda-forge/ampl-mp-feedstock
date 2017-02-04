@@ -13,6 +13,18 @@ Reusable high-performance .nl file reader which is up to 6x faster than
 the one provided by ASL
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ampl-mp-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ampl-mp-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/ampl-mp-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ampl-mp-feedstock)
+Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ampl-mp/badges/version.svg)](https://anaconda.org/conda-forge/ampl-mp)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ampl-mp/badges/downloads.svg)](https://anaconda.org/conda-forge/ampl-mp)
+
 Installing ampl-mp
 ==================
 
@@ -68,18 +80,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ampl-mp-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ampl-mp-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ampl-mp-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ampl-mp-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ampl-mp/badges/version.svg)](https://anaconda.org/conda-forge/ampl-mp)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ampl-mp/badges/downloads.svg)](https://anaconda.org/conda-forge/ampl-mp)
 
 
 Updating ampl-mp-feedstock
