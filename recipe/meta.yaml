@@ -17,8 +17,15 @@ build:
 
 requirements:
   build:
-    - toolchain
     - cmake
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - {{ compiler('fortran') }}
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
 
 test:
   files:
