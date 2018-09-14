@@ -24,6 +24,8 @@ requirements:
   host:
 
 test:
+  requires:
+    - {{ compiler('cxx') }}
   files:
     - miniampl
 
