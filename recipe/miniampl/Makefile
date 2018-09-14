@@ -1,4 +1,4 @@
-CXX = gcc -std=c99
+# CXX = gcc -std=c99
 INCLUDE_DIRS = $(PREFIX)/include/asl
 CXX_OPTS = $(addprefix -I,$(INCLUDE_DIRS))
 LIBS = -Wl,-rpath,$(PREFIX)/lib -L$(PREFIX)/lib -lasl  -lm -ldl
