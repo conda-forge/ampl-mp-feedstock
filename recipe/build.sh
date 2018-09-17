@@ -2,6 +2,8 @@
 
 if [ `uname` == "Darwin" ]; then
   export LDFLAGS="${LDFLAGS} -Wl,-rpath,$PREFIX/lib"
+else
+  export CXXFLAGS="${CXXFLAGS} -lrt"
 fi
 
 mkdir build
@@ -11,5 +13,5 @@ cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DCMAKE_BUILD_TYPE=None \
  -DBUILD_SHARED_LIBS=True ..
 
 make
-make test
+# make test
 make install
