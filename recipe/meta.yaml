@@ -12,8 +12,10 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
+  number: 1003
   skip: true  # [win]
+  run_exports:
+    - {{ pin_subpackage('ampl-mp', max_pin='x.x') }}
 
 requirements:
   build:
