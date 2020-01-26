@@ -9,6 +9,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON ^
       -DCMAKE_FIND_FRAMEWORK=LAST ^
+      -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=True ^
       -DCMAKE_BUILD_TYPE:STRING=None ^
       -Wno-dev ^
       ..
