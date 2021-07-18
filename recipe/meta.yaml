@@ -20,6 +20,7 @@ build:
 requirements:
   build:
     - cmake
+    - make
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
