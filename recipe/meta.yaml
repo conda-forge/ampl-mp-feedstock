@@ -27,6 +27,7 @@ requirements:
 
 test:
   requires:
+    - make  # [not win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   files:
