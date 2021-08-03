@@ -10,6 +10,8 @@ source:
   fn: {{ version }}.tar.gz
   url: https://github.com/ampl/mp/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - disable_benchmark.patch
 
 build:
   number: 1005
