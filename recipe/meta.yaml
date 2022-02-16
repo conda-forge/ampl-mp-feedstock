@@ -12,7 +12,8 @@ source:
   sha256: {{ sha256 }}
   patches:
     - disable_benchmark.patch
-    - fix_osx_arm64.patch
+    # - fix_osx_arm64.patch
+    - d03e486f98ad45b7ec2898480f943e9c846f2df0.patch  # [osx and arm64]
 
 build:
   number: 1005
