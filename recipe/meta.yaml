@@ -16,7 +16,7 @@ source:
     - d03e486f98ad45b7ec2898480f943e9c846f2df0.patch  # [osx and arm64]
 
 build:
-  number: 1005
+  number: 1006
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ampl-mp', max_pin='x.x') }}
