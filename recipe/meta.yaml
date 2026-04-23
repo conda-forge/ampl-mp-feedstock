@@ -1,6 +1,6 @@
 {% set name = "ampl-mp" %}
-{% set version = "3.1.0" %}
-{% set sha256 = "587c1a88f4c8f57bef95b58a8586956145417c8039f59b1758365ccc5a309ae9" %}
+{% set version = "4.0.4" %}
+{% set sha256 = "17cedaddb57a1df4d47bbe5fe0782f2e8d90a416130b70d291ef97513128b8dc" %}
 
 package:
   name: {{ name|lower }}
@@ -8,14 +8,14 @@ package:
 
 source:
   fn: {{ version }}.tar.gz
-  url: https://github.com/ampl/mp/archive/{{ version }}.tar.gz
+  url: https://github.com/ampl/mp/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
   patches:
     - disable_benchmark.patch
     - d03e486f98ad45b7ec2898480f943e9c846f2df0.patch  # [osx and arm64]
 
 build:
-  number: 1006
+  number: 0
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage('ampl-mp', max_pin='x.x') }}
@@ -26,6 +26,7 @@ requirements:
     - make  # [not win]
     - {{ compiler('fortran') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - unixodbc
